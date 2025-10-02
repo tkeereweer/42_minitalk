@@ -6,7 +6,7 @@
 /*   By: mkeerewe <mkeerewe@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/19 16:39:07 by mkeerewe          #+#    #+#             */
-/*   Updated: 2025/09/15 11:10:15 by mkeerewe         ###   ########.fr       */
+/*   Updated: 2025/10/02 09:41:27 by mkeerewe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,13 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdarg.h>
 
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }	t_list;
-
-# include <stdarg.h>
 
 typedef struct s_format
 {

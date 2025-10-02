@@ -6,7 +6,7 @@
 /*   By: mkeerewe <mkeerewe@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/15 10:36:56 by mkeerewe          #+#    #+#             */
-/*   Updated: 2025/09/15 16:02:53 by mkeerewe         ###   ########.fr       */
+/*   Updated: 2025/10/02 11:41:36 by mkeerewe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,9 +67,3 @@ int	ft_btoi(char *str)
 	}
 	return (res);
 }
-
-// int	main(void)
-// {
-// 	ft_btoi("01100101");
-// 	return(0);
-// }

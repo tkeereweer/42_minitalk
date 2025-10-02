@@ -13,15 +13,15 @@ NAME_CLIENT = client
 NAME_SERVER = server
 
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -g
 
 all: $(NAME_CLIENT) $(NAME_SERVER)
 
 $(NAME_CLIENT): $(LIBFT) $(OBJS_CLIENT)
-	$(CC) $(CFLAGS) -L$(LIBFT_DIR) -lft $(OBJS_CLIENT) -o $(NAME_CLIENT)
+	$(CC) $(CFLAGS) $(OBJS_CLIENT) -L$(LIBFT_DIR) -lft -o $(NAME_CLIENT)
 
 $(NAME_SERVER): $(LIBFT) $(OBJS_SERVER)
-	$(CC) $(CFLAGS) -L$(LIBFT_DIR) -lft $(OBJS_SERVER) -o $(NAME_SERVER)
+	$(CC) $(CFLAGS) $(OBJS_SERVER) -L$(LIBFT_DIR) -lft -o $(NAME_SERVER)
 
 $(LIBFT):
 	make -C $(LIBFT_DIR)
