@@ -6,11 +6,11 @@
 /*   By: mkeerewe <mkeerewe@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 22:40:22 by mkeerewe          #+#    #+#             */
-/*   Updated: 2025/09/15 11:11:07 by mkeerewe         ###   ########.fr       */
+/*   Updated: 2025/09/30 11:00:58 by mkeerewe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 static int	ft_putptrhex(unsigned long n, int ret)
 {
@@ -33,8 +33,8 @@ int	ft_putptr(void *ptr)
 
 	if (ptr == (void *) 0)
 	{
-		write(1, "0x0", 3);
-		return (3);
+		write(1, "(nil)", 5);
+		return (5);
 	}
 	n = (unsigned long) ptr;
 	write(1, "0x", 2);

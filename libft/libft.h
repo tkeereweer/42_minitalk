@@ -6,7 +6,7 @@
 /*   By: mkeerewe <mkeerewe@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/19 16:39:07 by mkeerewe          #+#    #+#             */
-/*   Updated: 2025/10/02 09:41:27 by mkeerewe         ###   ########.fr       */
+/*   Updated: 2025/10/02 13:39:32 by mkeerewe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,6 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }	t_list;
-
-typedef struct s_format
-{
-	int	ht;
-	int	space;
-	int	plus;
-}	t_format;
 
 void	ft_bzero(void *s, size_t n);
 int		ft_isalnum(int c);
@@ -73,12 +66,6 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-int		ft_putchar(char c);
-int		ft_putnbr(int n, t_format *format);
-int		ft_putuint(unsigned int n, int ret);
-int		ft_putstr(char *s);
-int		ft_puthex(unsigned int n, int cap, t_format *format);
-int		ft_putptr(void *ptr);
 int		ft_printf(const char *str, ...);
 
 #endif

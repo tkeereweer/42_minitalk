@@ -6,13 +6,13 @@
 /*   By: mkeerewe <mkeerewe@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/19 16:42:18 by mkeerewe          #+#    #+#             */
-/*   Updated: 2025/08/31 20:06:19 by mkeerewe         ###   ########.fr       */
+/*   Updated: 2025/09/29 18:44:00 by mkeerewe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	ft_move(char *str_dst, char *str_src, int i_len)
+static void	ft_move(unsigned char *str_dst, unsigned char *str_src, int i_len)
 {
 	int	i;
 
@@ -38,15 +38,15 @@ static void	ft_move(char *str_dst, char *str_src, int i_len)
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	int		i_len;
-	char	*str_dst;
-	char	*str_src;
+	int				i_len;
+	unsigned char	*str_dst;
+	unsigned char	*str_src;
 
 	if (src == (void *) 0 && dst == (void *) 0)
 		return (dst);
 	i_len = (int) len;
-	str_dst = (char *) dst;
-	str_src = (char *) src;
+	str_dst = (unsigned char *) dst;
+	str_src = (unsigned char *) src;
 	ft_move(str_dst, str_src, i_len);
 	return (dst);
 }

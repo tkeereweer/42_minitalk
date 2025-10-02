@@ -6,7 +6,7 @@
 /*   By: mkeerewe <mkeerewe@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/15 10:14:02 by mkeerewe          #+#    #+#             */
-/*   Updated: 2025/10/02 11:41:26 by mkeerewe         ###   ########.fr       */
+/*   Updated: 2025/10/02 11:51:09 by mkeerewe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,6 @@ void	ft_sendmsg(char *str, int pid)
 		ft_sendbits(str[i], pid);
 		i++;
 	}
-	// ft_sendbits('\0', pid);
 }
 
 int	main(int argc, char *argv[])

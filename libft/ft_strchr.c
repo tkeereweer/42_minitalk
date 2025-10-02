@@ -6,7 +6,7 @@
 /*   By: mkeerewe <mkeerewe@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/19 16:42:53 by mkeerewe          #+#    #+#             */
-/*   Updated: 2025/08/19 16:42:54 by mkeerewe         ###   ########.fr       */
+/*   Updated: 2025/09/29 17:53:05 by mkeerewe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,16 @@
 
 char	*ft_strchr(const char *s, int c)
 {
+	char	ch;
+
+	ch = (char) c;
 	while (*s != '\0')
 	{
-		if (*s == c)
+		if (*s == ch)
 			return ((char *) s);
 		s++;
 	}
-	if (*s == c)
+	if (*s == ch)
 		return ((char *) s);
 	return ((void *) 0);
 }

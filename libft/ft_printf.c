@@ -6,11 +6,11 @@
 /*   By: mkeerewe <mkeerewe@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 19:32:27 by mkeerewe          #+#    #+#             */
-/*   Updated: 2025/09/15 11:11:12 by mkeerewe         ###   ########.fr       */
+/*   Updated: 2025/09/04 10:35:28 by mkeerewe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 static int	ft_is_spec(char c)
 {

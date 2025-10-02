@@ -6,11 +6,11 @@
 /*   By: mkeerewe <mkeerewe@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/19 16:42:30 by mkeerewe          #+#    #+#             */
-/*   Updated: 2025/09/15 11:11:10 by mkeerewe         ###   ########.fr       */
+/*   Updated: 2025/09/01 15:18:03 by mkeerewe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 int	ft_putchar(char c)
 {
